@@ -7,7 +7,6 @@ Postify is a modern full-stack social media application where users can create, 
 - 🔐 User Authentication
 - 📝 Create Posts
 - 🖼️ Upload Images with ImageKit
-- ❤️ Like & Interact with Posts
 - 📱 Responsive Design
 - ⚡ Fast and Modern UI
 - 🔄 Real-Time Updates Ready
