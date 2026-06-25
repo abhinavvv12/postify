@@ -11,7 +11,7 @@ const FeedPage = () => {
     ])
 
     useEffect(()=>{
-        axios.get("http://localhost:3000/posts").then(
+        axios.get(`${import.meta.env.VITE_API_URL}/posts`).then(
             (res)=>{
                 setPosts(res.data.posts)
             }
@@ -20,7 +20,7 @@ const FeedPage = () => {
 
     const handleDelete = async (id) => {
     try {
-        await axios.delete(`http://localhost:3000/posts/${id}`);
+        await axios.delete(`${import.meta.env.VITE_API_URL}/posts/${id}`);
 
         setPosts(posts.filter(post => post._id !== id));
 
