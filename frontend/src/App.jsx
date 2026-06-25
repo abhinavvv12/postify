@@ -1,6 +1,6 @@
 import React from 'react'
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
-import CreatePost from './pages/createPost'
+import CreatePost from './pages/CreatePost'
 import FeedPage from './pages/FeedPage'
 
 
