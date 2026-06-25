@@ -2,6 +2,8 @@ import React, {useState, useEffect}from 'react'
 import axios from 'axios'
 
 const FeedPage = () => {
+    const [Loading, setLoading] = useState(true);
+
     const [posts, setPosts] = useState([
         {
             _id: "1",
@@ -15,8 +17,13 @@ const FeedPage = () => {
             (res)=>{
                 setPosts(res.data.posts)
             }
-        )
+        ).finally(() => {
+            setLoading(false);
+        });
     },[])
+    if (loading) {
+        return <h2>Loading Posts....</h2>
+    }
 
     const handleDelete = async (id) => {
     try {
