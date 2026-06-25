@@ -2,14 +2,14 @@ import React, {useState, useEffect}from 'react'
 import axios from 'axios'
 
 const FeedPage = () => {
-    const [Loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(true);
 
     const [posts, setPosts] = useState([
-        {
-            _id: "1",
-            image: "https://media.istockphoto.com/id/1381637603/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=w64j3fW8C96CfYo3kbi386rs_sHH_6BGe8lAAAFS-y4=",
-            prompt: "Beautiful Scenary"
-        }
+        // {
+        //     _id: "1",
+        //     image: "https://media.istockphoto.com/id/1381637603/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=w64j3fW8C96CfYo3kbi386rs_sHH_6BGe8lAAAFS-y4=",
+        //     prompt: "Beautiful Scenary"
+        // }
     ])
 
     useEffect(()=>{
