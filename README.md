@@ -2,6 +2,8 @@
 
 Postify is a modern full-stack social media application where users can create, upload, and manage posts with images. Built using the MERN Stack and integrated with ImageKit for image storage and optimization.
 
+🔗 **Live Demo:** https://postify-agw0bbftz-abhinavvv12s-projects.vercel.app/create-post
+
 ## 🌐 Features
 
 - 🔐 User Authentication
